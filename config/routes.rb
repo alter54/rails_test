@@ -1,6 +1,8 @@
 RailsTest::Application.routes.draw do
   resources :posts
 
+  get 'users' => 'users#index'
+
   # get 'posts' => 'posts#index'
 
   

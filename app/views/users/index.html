@@ -1,0 +1,15 @@
+<h1>test</h1>
+<ul>
+<% @users.each do |user| %>
+  <% user.full_name.downcase.split(" ").each do |segment| %>
+    <li><%= segment %></li>
+   <% end %>
+<% end %>
+</ul>
+
+<ul>
+<% ["one", "two"].each do |array_item| %>
+  <li><%= array_item %></li>
+<% end %>
+</ul>
+  
